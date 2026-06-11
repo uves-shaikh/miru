@@ -1,0 +1,41 @@
+# Ping - Antigravity AI Coding Rules
+
+You are working on the Ping app. To prevent hallucination and maintain architectural integrity, you MUST strictly adhere to these rules before writing any code.
+
+## 1. Project Architecture (CRITICAL)
+
+- **Framework**: Expo SDK 54 ONLY. Do not assume or upgrade to SDK 55/56.
+- **Client**: We are using a **Development Build** (`expo-dev-client`). We are NOT using Expo Go. Do not write code or instructions for Expo Go.
+- **Native Modules**:
+  - For push notifications, strictly use `expo-notifications` with `"DevicePushTokenAutoRegistration": false` in `app.json`.
+  - For background sync, strictly use `expo-background-task`. **DO NOT use the deprecated `expo-background-fetch`**.
+- **State Management**: Use the existing React Context (`src/context/app-context.tsx`).
+- **Database**: Strictly `AsyncStorage`. Do not invent or install external databases (e.g., SQLite, Firebase).
+
+## 2. File & Folder Structure
+
+Always place files in their correct, established locations:
+
+- `app/`: Expo Router routes and layouts (e.g., `(tabs)/index.tsx`, `_layout.tsx`).
+- `src/components/`: Reusable React components.
+- `src/constants/`: Configuration files (`theme.ts`, `strings.ts`).
+- `src/hooks/`: Custom logic and side-effects (e.g., `use-notifications.ts`).
+- `src/context/`: Global providers (e.g., `app-context.tsx`).
+- `src/types/`: Shared TypeScript types.
+
+## 3. UI and Styling System (Obsidian Calm)
+
+- **NO TailwindCSS**. You must exclusively use React Native's `StyleSheet` API.
+- **Strict Color Palette**: You MUST use the `Colors` object imported from `src/constants/theme.ts`. Never hardcode raw hex colors in components.
+  - Backgrounds: `Colors.bg` (`#0D0D0F`), `Colors.surface` (`#1A1A1F`), `Colors.surfaceHigh` (`#242429`)
+  - Accents: `Colors.accent` (`#6366F1`)
+  - Text: `Colors.text`, `Colors.textSecondary`
+- **Strict Spacing & Radii**: Use `Spacing` and `Radius` from `src/constants/theme.ts`.
+- **Animations**: Exclusively use `react-native-reanimated` (v4). Do not use the legacy `Animated` API from react-native.
+
+## 4. Coding Standards
+
+- **TypeScript**: All files must be `.tsx` or `.ts`. Do not use `any`. Use the types defined in `src/types/index.ts`.
+- **Absolute vs Relative**: Always use relative imports pointing to `src/...`.
+- **Functional Components**: Use modern functional components with hooks.
+- **Check package.json**: Before trying to use an external library, check `package.json` to verify if it exists. Do not hallucinate dependencies.
