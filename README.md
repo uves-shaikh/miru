@@ -1,91 +1,84 @@
-# Miru
+<div align="center">
+  <h1>✨ Miru</h1>
+  <p><strong>Your Personal Architect for Daily Habits and Focus</strong></p>
+  <p>Stop forgetting what matters. Start building the routines that change your life.</p>
 
-Miru is a production-ready React Native application built with Expo for managing daily recurring task reminders. Designed with a premium "Obsidian Calm" aesthetic, Miru allows users to define tasks with highly customizable schedules and receive reliable local push notifications.
+<a href="./Miru.apk"><strong>Download Now</strong></a>
 
-## ✨ Features
+</div>
 
-- **Custom Scheduling Options:**
-  - 🔁 **Interval-based:** e.g., "Every 30 minutes between 9:00 AM and 5:00 PM"
-  - 📌 **Fixed Times:** Add specific times throughout the day
-  - 📅 **Daily:** Once a day at a set time
-- **Reliable Local Notifications:** Fully offline-capable local push notifications using `expo-notifications`, intelligently scheduled to respect iOS/Android limits.
-- **Premium UI/UX:** "Obsidian Calm" design language featuring deep dark backgrounds (`#0D0D0F`), vibrant electric indigo accents (`#6366F1`), and smooth micro-interactions powered by Reanimated.
-- **Custom Time Picker:** A bespoke, scroll-wheel style time picker built from scratch using `FlatList` and Reanimated.
-- **Privacy First:** All data is stored locally using `AsyncStorage` and `expo-secure-store`. No external databases or third-party push services are used.
+---
 
-## 🛠 Tech Stack
+## 🎯 The Problem
 
-- **Framework:** React Native + [Expo](https://expo.dev/) (SDK 54)
-- **Navigation:** [Expo Router](https://docs.expo.dev/router/introduction/) (File-based navigation)
-- **State Management:** React Context + `useReducer`
-- **Animations:** React Native Reanimated + React Native Gesture Handler
-- **Storage:** `@react-native-async-storage/async-storage` & `expo-secure-store`
-- **Notifications:** `expo-notifications` & `expo-background-task`
-- **Typography & Icons:** `@expo-google-fonts/inter` & `@expo/vector-icons`
+In a world full of endless distractions and chaotic schedules, maintaining healthy habits and daily routines is harder than ever. Whether it's drinking enough water, taking screen breaks, remembering medications, or doing your daily stretches, these crucial micro-habits easily slip our minds.
 
-## 🚀 Getting Started
+You don't need another complex project management tool or a generic alarm clock. You need something built specifically for the rhythm of _your_ day.
 
-### Prerequisites
+## 🚀 The Solution: Meet Miru
 
-- Node.js (v18 or newer recommended)
-- npm, yarn, or pnpm
-- Expo Go app on your physical device, or an iOS Simulator / Android Emulator
+**Miru** is a beautifully crafted, premium daily task reminder app designed to effortlessly integrate into your life. Built with a stunning "Obsidian Calm" aesthetic, Miru acts as a silent partner that gently nudges you exactly when you need it, helping you reclaim your focus and health.
 
-### Installation
+No accounts. No subscriptions. Just a focused, lightning-fast experience built entirely around your needs.
 
-1. **Clone the repository:**
+### 🔥 Why Use Miru?
 
-   ```bash
-   git clone <repository-url>
-   cd miru
-   ```
+- **Total Customization:** Your schedule, your rules. Want a reminder every 45 minutes between 9 AM and 5 PM? Or exactly at 8:30 AM and 6 PM? Miru handles both flawlessly.
+- **Frictionless Experience:** A buttery-smooth, natively animated interface makes adding and managing reminders a joy, not a chore.
+- **100% Private:** Your data never leaves your phone. Everything is stored locally. No creepy tracking, no data harvesting.
+- **Battery Optimized:** Intelligent local push notifications mean Miru runs without draining your battery in the background.
 
-2. **Install dependencies:**
+---
 
-   ```bash
-   npm install
-   ```
+## ✨ Features That Actually Save You Time
 
-3. **Start the development server:**
+- **🔁 Intelligent Interval Reminders:** Don't set 10 different alarms. Simply tell Miru to remind you "Every X minutes" within a time window, and let the app do the math. Perfect for hydration, posture checks, or Pomodoro sessions.
+- **📌 Precision Fixed Reminders:** Schedule essential tasks at specific, non-negotiable times. Never miss a vitamin or a daily meeting again.
+- **🎨 "Obsidian Calm" Design:** A visually stunning dark-mode interface built on deep `#0D0D0F` backgrounds with vibrant electric indigo accents. It looks incredible and feels incredibly premium.
+- **⏱️ Custom Scroll-Wheel Time Picker:** Forget clunky default pickers. We built a gorgeous, bespoke, momentum-scrolling time picker from scratch just to ensure the best possible UX.
+- **📱 Offline by Default:** Whether you're on a plane or in a subway, Miru's local notifications work flawlessly.
 
-   ```bash
-   npx expo start
-   ```
+---
 
-4. **Run on a device or emulator:**
-   - Press `a` to open in Android Emulator
-   - Press `i` to open in iOS Simulator
-   - Scan the QR code with the Expo Go app on your physical device
+## ⚡ Try Miru Today
 
-## 📁 Project Structure
+Ready to take control of your day? Experience the polished performance and beautiful design of Miru right now.
 
-```
-miru/
-├── app/                  # Expo Router file-based navigation (screens)
-│   ├── (tabs)/           # Bottom tab navigation screens
-│   └── _layout.tsx       # Root layout
-├── assets/               # Static assets (images, icons, splash screen)
-├── src/                  # Source code
-│   ├── components/       # Reusable UI components
-│   ├── constants/        # Theme, colors, strings, and configuration
-│   ├── hooks/            # Custom React hooks (e.g., use-notifications)
-│   ├── store/            # State management (Context & Reducers)
-│   ├── types/            # TypeScript type definitions
-│   └── utils/            # Helper functions (time formatting, etc.)
-├── app.json              # Expo configuration
-├── package.json          # Project dependencies and scripts
-└── prompt.md             # Original prompt and design constraints
+### ⬇️ Download the APK
+
+Want to install it directly on your Android device? **[Download Miru.apk here](./Miru.apk)** and install it to start building better routines!
+
+### 💻 Run it Locally (For Developers)
+
+Getting the project running locally takes less than 2 minutes.
+
+```bash
+# 1. Clone the magic
+git clone https://github.com/uves-shaikh/miru
+cd miru
+
+# 2. Install dependencies instantly
+npm install
+
+# 3. Start the engine
+npx expo start
 ```
 
-## 🎨 Design Principles (Obsidian Calm)
+_Press `a` for Android, `i` for iOS, or scan the QR code with Expo Go._
 
-Miru adheres strictly to the **Obsidian Calm** design direction:
+---
 
-- **Colors:** Deep obsidian backgrounds (`#0D0D0F`), subtle card surfaces (`#1A1A1F`), and an electric indigo accent (`#6366F1`).
-- **Typography:** Inter font family (Regular, SemiBold, Bold) for a clean, modern look.
-- **Interactions:** Subtle haptic feedback and Reanimated spring animations on interactions (button presses, tab transitions, swipe-to-delete).
-- **Icons & Illustrations:** Inline SVGs for beautiful, scalable empty states and iconography.
+## 🏗️ Premium Engineering
 
-## 📄 License
+Under the hood, Miru is built like a modern startup flagship product:
 
-This project is licensed under the MIT License.
+- **Core:** React Native + Expo (SDK 54) & Expo Router for flawless navigation.
+- **Fluid Motion:** Powered by `React Native Reanimated` & `Gesture Handler` for true 60fps micro-interactions.
+- **Reliability:** Built on `expo-notifications` for rock-solid local scheduling that respects native OS limitations.
+
+---
+
+<div align="center">
+  <p><strong>Transform your routines today.</strong></p>
+  <h3><a href="#-try-miru-today">Get Miru Now 🚀</a></h3>
+</div>
