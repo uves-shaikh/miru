@@ -3,7 +3,7 @@
   <p><strong>Your Personal Architect for Daily Habits and Focus</strong></p>
   <p>Stop forgetting what matters. Start building the routines that change your life.</p>
 
-<a href="https://github.com/uves-shaikh/miru/raw/main/Miru.apk"><strong>Download Now</strong></a>
+<a href="https://github.com/uves-shaikh/miru/raw/main/apks/Miru.apk"><strong>Download Now</strong></a>
 
 </div>
 
@@ -46,7 +46,12 @@ Ready to take control of your day? Experience the polished performance and beaut
 
 ### ⬇️ Download the APK
 
-Want to install it directly on your Android device? <strong><a href="https://github.com/uves-shaikh/miru/raw/main/Miru.apk">Download Miru.apk here</a></strong> and install it to start building better routines!
+Want to install it directly on your Android device? We provide different versions based on your device's architecture:
+
+- <strong><a href="https://github.com/uves-shaikh/miru/raw/main/apks/Miru.apk">Miru.apk (Recommended)</a></strong>: This is the `arm64-v8a` version. Use this by default as it works on 99% of modern phones.
+- <a href="https://github.com/uves-shaikh/miru/raw/main/apks/Miru-armeabi-v7a.apk">Miru-armeabi-v7a.apk</a>: For older 32-bit Android phones.
+- <a href="https://github.com/uves-shaikh/miru/raw/main/apks/Miru-x86_64.apk">Miru-x86_64.apk</a>: For 64-bit Emulators.
+- <a href="https://github.com/uves-shaikh/miru/raw/main/apks/Miru-x86.apk">Miru-x86.apk</a>: For older 32-bit Emulators.
 
 ### 💻 Run it Locally (For Developers)
 
