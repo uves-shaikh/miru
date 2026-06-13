@@ -47,6 +47,8 @@ export const ReminderCard = memo(function ReminderCard({
   }, [onDeleteRequest, reminder.id]);
 
   const pan = Gesture.Pan()
+    .activeOffsetX([-20, 20])
+    .failOffsetY([-10, 10])
     .onUpdate((e) => {
       translateX.value = e.translationX;
     })
