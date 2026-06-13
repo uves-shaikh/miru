@@ -3,7 +3,7 @@
   <p><strong>Your Personal Architect for Daily Habits and Focus</strong></p>
   <p>Stop forgetting what matters. Start building the routines that change your life.</p>
 
-<a href="./Miru.apk"><strong>Download Now</strong></a>
+<a href="./Miru.apk" download><strong>Download Now</strong></a>
 
 </div>
 
@@ -46,7 +46,7 @@ Ready to take control of your day? Experience the polished performance and beaut
 
 ### ⬇️ Download the APK
 
-Want to install it directly on your Android device? **[Download Miru.apk here](./Miru.apk)** and install it to start building better routines!
+Want to install it directly on your Android device? <strong><a href="./Miru.apk" download>Download Miru.apk here</a></strong> and install it to start building better routines!
 
 ### 💻 Run it Locally (For Developers)
 
