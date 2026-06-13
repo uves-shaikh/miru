@@ -104,10 +104,6 @@ function HomeContent() {
 
   return (
     <View style={styles.container}>
-      {permissionChecked && !permissionGranted && (
-        <PermissionBanner onPress={() => Linking.openSettings()} />
-      )}
-
       <ScrollView
         style={styles.scroll}
         contentContainerStyle={styles.scrollContent}
@@ -120,6 +116,11 @@ function HomeContent() {
         }
         showsVerticalScrollIndicator={false}
       >
+        {/* Permission Banner */}
+        {permissionChecked && !permissionGranted && (
+          <PermissionBanner onPress={() => Linking.openSettings()} />
+        )}
+
         {/* Header */}
         <View style={styles.header}>
           <Text style={styles.greeting}>{greeting}</Text>
